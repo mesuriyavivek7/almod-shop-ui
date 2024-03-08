@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+.offer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding:4rem 6rem;
+}
+
+/* #AD6F69 👉🏽 #43302E https://www.jootoor.com/brown-gradient/ */
+.offerTitle{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: .5rem;
+}
+
+.heading{
+    color:#3E3232;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.line{
+    height: .1rem;
+    background-color:#E48F45;
+    width: 40%;
+    border-radius:.5rem;
+    border: none;
+}
+
+.offerContainer{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.offerItem{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    -webkit-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    background-color: #43302e;
+    background-image: linear-gradient(315deg, #ad6f69 0%, #43302e 84%);
+}
+.offerImgSec{
+    flex: 3;
+}
+.offerImg{
+    width: 100%;
+    height:220px;
+}
+
+.offerContent{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: white;
+}
+
+.offerHead{
+    width: 100%;
+}
+.offerCat{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Protest Strike', sans-serif;
+}
+.offerValue{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E48F45;
+}
+.offerValNum{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+.offerPrice{
+    font-size:1.2rem;
+    color: white;
+    font-style: normal;
+}
+.innerItalic{
+    font-size: .8rem;
+    color: white;
+    font-style: italic;
+}
+.btn{
+    border: none;
+    padding: .8rem 1.2rem;
+    background-color:#E48F45;
+    color: white;
+    font-weight: bold;
+    border-radius: .5rem;
+    transition: .2s linear;
+    cursor: pointer;
+}
+.btn:hover{
+    color:#f5f5f5;
+}
+
+@media screen and (max-width:768px){
+    .offerTitle .heading{
+    font-size:1.8rem;
+   }
+
+    .offer{
+        padding:2rem;
+    }
+    .offerContainer{
+        flex-direction: column;
+    }
+    
+}

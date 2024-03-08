@@ -1,0 +1,81 @@
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #f5f5f5;
+    padding:8rem 6rem;
+    padding-bottom: 2rem;
+}
+
+.contactContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contactHead{
+    padding: .5rem;
+    width: 100%;
+}
+.contactHeadText{
+    color: #E48F45;
+    letter-spacing: .2rem;
+    font-size: 2rem;
+}
+
+.contactInfo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contactContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.infoText{
+    font-size: 1rem;
+    color:#555555;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.infoHead{
+    font-size:1.2rem;
+    font-weight: bold;
+    color:#333333;
+}
+.contactForm{
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+}
+.formHeadText{
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contactInputBox{
+    padding:.6rem .4rem;
+    border: none;
+    border-bottom:.1rem solid black;
+    outline: none;
+}
+.contactForm form select{
+    padding: .6rem .4rem;
+}
+.contactBtn{
+    padding: .6rem .4rem;
+    background-color:#3E3232;
+    color: white;
+    border: none;
+    width:30%;
+}

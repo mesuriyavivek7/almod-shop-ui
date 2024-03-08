@@ -1,0 +1,190 @@
+.navbar{
+    position:fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    background-color:#3E3232;
+    z-index: 9999;
+    transition: .2s linear;
+}
+.navbar-hide{
+   top: -10%;
+}
+.navhead{
+    font-size:2.5rem;
+    color:white;
+    font-weight:600;
+    cursor: pointer;
+}
+.menubar{
+    display: flex;
+    align-items: center;
+    gap:2.5rem;
+}
+.menuItem{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 300;
+    transition: .2s linear;
+}
+.menuItem:hover{
+    color:#E48F45;
+}
+.navIcon{
+    display: flex;
+    align-items: center;
+    gap:1.2rem;
+}
+.navBtn{
+    border: none;
+    background-color:white;
+    color: #3E3232;
+    padding:.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .2s linear;
+    font-weight: bold;
+}
+.navBtn:hover{
+    background-color:#E48F45;
+}
+.searchIcon{
+    font-weight:300;
+    font-size:1rem;
+    cursor: pointer;
+    color: white;
+    transition: .2s linear;
+}
+.searchIcon:hover{
+    color:#E48F45;
+}
+.shoppingCart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.navCart{
+    font-weight:300;
+    color: white;
+    transition: .2s linear;
+}
+.navCart:hover{
+    color: #E48F45;
+}
+.cartItem{
+    position: absolute;
+    background-color:#7E6363;
+    color:white;
+    font-size: .8rem;
+    right: -5px;
+    top: -8px;
+    padding: 2px 5px;
+    border-radius:.5rem;
+}
+.closeIcon , .menuIcon{
+    color: white;
+    font-weight: 300;
+    transition: .2s linear;
+}
+.searchSec{
+    position:absolute;
+    top: 100%;
+    background-color:#f5f5f5;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    transition: .4s ease;
+}
+.searchTitle{
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+}
+.inputBox{
+    display: flex;
+    align-items: center;
+    border: .1rem solid lightgray;
+    background-color:white;
+    width: 70%;
+}
+
+.searchInput{
+    border:none;
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+}
+.searchResult{
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 70%;
+}
+.SearchCloseIcon{
+    position: absolute;
+    top:5%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.searchBtnSec{
+    padding: 1rem;
+}
+
+.viewAllBtn{
+    color: #E48F45;
+    border: .1rem solid #E48F45;
+    padding: .8rem 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    transition: .2s linear;
+}
+.viewAllBtn:hover{
+    color: white;
+    background-color: #E48F45;
+}
+
+
+/* responsive css */
+
+@media screen and (max-width:1150px){
+    .navbar{
+     justify-content: space-between;
+    }
+    .menubar{
+       position: absolute;
+       top: 100%;
+       flex-direction: column;
+       gap: 1.5rem;
+       padding: 2rem;
+       background-color:white;
+       right: -120%;
+       width: 90%;
+       height: 100vh;
+       transition: .2s linear;
+    }
+    .open{
+        right: 0%;
+    }
+    .menuItem{
+        color: black;
+    }
+    .navBtn{
+        background-color: #3E3232;
+        color: white;
+    }
+    .navhead{
+        font-size: 1.8rem;
+    }
+    
+}

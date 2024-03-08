@@ -1,0 +1,98 @@
+.testimonial{
+    background-color: #3E3232;
+    padding:2rem 0rem;
+}
+
+.testimonialTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+ }
+ 
+ .testimonialHeading{
+     color:white;
+     font-size: 2rem;
+     font-weight: 500;
+ }
+ .testimonialLine{
+     height: .1rem;
+     background-color:#E48F45;
+     width: 10%;
+     border-radius:.5rem;
+     border: none;
+ }
+ 
+
+ /* css for slider  */
+
+ .testimonial .mySwiper{
+    width: 85%;
+    height: 10rem;
+    position: unset;
+    padding: 2rem 2.5rem;
+    position: relative;
+ }
+
+
+.testimonial .swiper-button-prev{
+    left: 0rem;
+    color:#E48F45;
+}
+.testimonial .swiper-button-next{
+    right: 0rem;
+    color:#E48F45;
+}
+
+
+.testimonial .swiper-slide{
+    background-color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.topSec{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+ .testiImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+.personName{
+    color: #3E3232;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.testiContent{
+    padding: .5rem 0;
+}
+.testitext{
+    color: black;
+}
+@media screen and (max-width:768px){
+    
+    .testimonialTitle .testimonialHeading{
+        font-size:1.8rem;
+    }
+    .testimonial .mySwiper{
+        padding: 2rem 1rem;
+    }
+
+    .testimonial .swiper-button-prev,
+    .testimonial .swiper-button-next{
+        display: none;
+    }
+    
+}
